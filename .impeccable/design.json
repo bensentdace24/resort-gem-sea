@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-24T15:09:34.7595405+08:00",
+  "title": "Design System: Gem by the Sea",
+  "extensions": {
+    "colorMeta": {
+      "deep-sea-ink": { "role": "neutral", "displayName": "Deep Sea Ink", "canonical": "#071b27", "tonalRamp": ["oklch(15% 0.025 232)", "oklch(25% 0.025 232)", "oklch(35% 0.024 232)", "oklch(47% 0.022 232)", "oklch(60% 0.019 232)", "oklch(72% 0.015 232)", "oklch(84% 0.009 232)", "oklch(95% 0.004 232)"] },
+      "reef-ink": { "role": "neutral", "displayName": "Reef Ink", "canonical": "#0c2936", "tonalRamp": ["oklch(15% 0.032 226)", "oklch(25% 0.032 226)", "oklch(35% 0.03 226)", "oklch(47% 0.027 226)", "oklch(60% 0.022 226)", "oklch(72% 0.017 226)", "oklch(84% 0.011 226)", "oklch(95% 0.005 226)"] },
+      "sea-foam-paper": { "role": "neutral", "displayName": "Sea-Foam Paper", "canonical": "#f6fbf8", "tonalRamp": ["oklch(15% 0.012 160)", "oklch(25% 0.011 160)", "oklch(35% 0.01 160)", "oklch(47% 0.009 160)", "oklch(60% 0.008 160)", "oklch(72% 0.007 160)", "oklch(84% 0.006 160)", "oklch(95% 0.004 160)"] },
+      "warm-shell-paper": { "role": "neutral", "displayName": "Warm Shell Paper", "canonical": "#f6efe5", "tonalRamp": ["oklch(15% 0.018 72)", "oklch(25% 0.018 72)", "oklch(35% 0.017 72)", "oklch(47% 0.016 72)", "oklch(60% 0.015 72)", "oklch(72% 0.014 72)", "oklch(84% 0.012 72)", "oklch(95% 0.009 72)"] },
+      "aurora-aqua": { "role": "primary", "displayName": "Aurora Aqua", "canonical": "#54efd4", "tonalRamp": ["oklch(15% 0.12 174)", "oklch(25% 0.14 174)", "oklch(35% 0.16 174)", "oklch(47% 0.18 174)", "oklch(60% 0.19 174)", "oklch(72% 0.18 174)", "oklch(84% 0.13 174)", "oklch(95% 0.05 174)"] },
+      "horizon-blue": { "role": "secondary", "displayName": "Horizon Blue", "canonical": "#2e9cff", "tonalRamp": ["oklch(15% 0.12 250)", "oklch(25% 0.15 250)", "oklch(35% 0.18 250)", "oklch(47% 0.2 250)", "oklch(60% 0.2 250)", "oklch(72% 0.17 250)", "oklch(84% 0.11 250)", "oklch(95% 0.04 250)"] },
+      "coral-heat": { "role": "secondary", "displayName": "Coral Heat", "canonical": "#ff745e", "tonalRamp": ["oklch(15% 0.11 28)", "oklch(25% 0.14 28)", "oklch(35% 0.17 28)", "oklch(47% 0.2 28)", "oklch(60% 0.21 28)", "oklch(72% 0.18 28)", "oklch(84% 0.11 28)", "oklch(95% 0.04 28)"] },
+      "orchid-glow": { "role": "tertiary", "displayName": "Orchid Glow", "canonical": "#db5cff", "tonalRamp": ["oklch(15% 0.13 315)", "oklch(25% 0.17 315)", "oklch(35% 0.21 315)", "oklch(47% 0.24 315)", "oklch(60% 0.25 315)", "oklch(72% 0.2 315)", "oklch(84% 0.13 315)", "oklch(95% 0.05 315)"] },
+      "island-sun": { "role": "tertiary", "displayName": "Island Sun", "canonical": "#ffcd62", "tonalRamp": ["oklch(15% 0.08 82)", "oklch(25% 0.1 82)", "oklch(35% 0.12 82)", "oklch(47% 0.14 82)", "oklch(60% 0.15 82)", "oklch(72% 0.15 82)", "oklch(84% 0.11 82)", "oklch(95% 0.04 82)"] },
+      "misted-copy": { "role": "neutral", "displayName": "Misted Copy", "canonical": "#a9c5ca", "tonalRamp": ["oklch(15% 0.02 212)", "oklch(25% 0.025 212)", "oklch(35% 0.03 212)", "oklch(47% 0.034 212)", "oklch(60% 0.035 212)", "oklch(72% 0.03 212)", "oklch(84% 0.02 212)", "oklch(95% 0.007 212)"] },
+      "tide-line": { "role": "neutral", "displayName": "Tide Line", "canonical": "rgba(220, 252, 251, 0.17)", "tonalRamp": ["oklch(15% 0.008 190)", "oklch(25% 0.01 190)", "oklch(35% 0.012 190)", "oklch(47% 0.014 190)", "oklch(60% 0.015 190)", "oklch(72% 0.014 190)", "oklch(84% 0.01 190)", "oklch(95% 0.004 190)"] },
+      "lagoon-glass": { "role": "neutral", "displayName": "Lagoon Glass", "canonical": "rgba(10, 41, 54, 0.72)", "tonalRamp": ["oklch(15% 0.03 226)", "oklch(25% 0.032 226)", "oklch(35% 0.03 226)", "oklch(47% 0.027 226)", "oklch(60% 0.022 226)", "oklch(72% 0.017 226)", "oklch(84% 0.011 226)", "oklch(95% 0.005 226)"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "First-viewport promise only." },
+      "headline": { "displayName": "Headline", "purpose": "Major section invitations." },
+      "editorial": { "displayName": "Editorial", "purpose": "Brief lyrical emphasis, quotes, and destination titles." },
+      "body": { "displayName": "Body", "purpose": "Clear descriptive and planning copy." },
+      "label": { "displayName": "Label", "purpose": "Uppercase metadata and form labels." }
+    },
+    "shadows": [
+      { "name": "image-float", "value": "0 24px 80px rgba(0, 13, 22, 0.34)", "purpose": "Large photography and hero crops." },
+      { "name": "planning-lift", "value": "0 25px 80px rgba(0, 0, 0, 0.28)", "purpose": "Booking preview crossing the hero boundary." },
+      { "name": "location-lift", "value": "0 14px 40px rgba(0, 0, 0, 0.22)", "purpose": "Compact pale glass overlays." },
+      { "name": "aqua-action", "value": "0 13px 28px rgba(84, 239, 212, 0.18)", "purpose": "Resting primary call to action." }
+    ],
+    "motion": [
+      { "name": "state-standard", "value": "180ms ease", "purpose": "Navigation, compact controls, and input-adjacent state changes." },
+      { "name": "lift-expressive", "value": "200ms cubic-bezier(.2,.8,.2,1)", "purpose": "Button lift and high-intent actions." },
+      { "name": "image-reveal", "value": "650ms cubic-bezier(.16,1,.3,1)", "purpose": "Restrained destination-image hover zoom." },
+      { "name": "aurora-drift", "value": "13s ease-in-out infinite alternate", "purpose": "Slow atmospheric hero light; disabled by reduced-motion preference." }
+    ],
+    "breakpoints": [
+      { "name": "compact-mobile", "value": "390px" },
+      { "name": "mobile", "value": "720px" },
+      { "name": "tablet", "value": "1020px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The luminous primary action used on the dark editorial canvas.",
+      "html": "<button class=\"ds-btn-primary\">Plan your escape <span aria-hidden=\"true\">↘</span></button>",
+      "css": ".ds-btn-primary { min-height: 52px; display: inline-flex; align-items: center; justify-content: center; gap: 12px; padding: 0 22px; border: 0; border-radius: 10px; color: #04231f; background: var(--aqua, #54efd4); box-shadow: 0 13px 28px rgba(84,239,212,.18); font: 700 1rem 'DM Sans', sans-serif; transition: transform 200ms cubic-bezier(.2,.8,.2,1), box-shadow 200ms ease; } .ds-btn-primary:hover { transform: translateY(-3px); box-shadow: 0 16px 35px rgba(84,239,212,.27); } .ds-btn-primary:focus-visible { outline: 3px solid var(--sun, #ffcd62); outline-offset: 4px; } .ds-btn-primary:active { transform: translateY(-1px); }"
+    },
+    {
+      "name": "Light Button",
+      "kind": "button",
+      "refersTo": "button-dark",
+      "description": "A quieter pale action for secondary invitations on dark sections.",
+      "html": "<button class=\"ds-btn-light\">Hear from travelers</button>",
+      "css": ".ds-btn-light { min-height: 52px; display: inline-flex; align-items: center; justify-content: center; padding: 0 22px; border: 0; border-radius: 10px; color: var(--ink, #071b27); background: var(--paper, #f6fbf8); font: 700 1rem 'DM Sans', sans-serif; transition: transform 200ms cubic-bezier(.2,.8,.2,1), background 200ms ease; } .ds-btn-light:hover { transform: translateY(-3px); background: var(--aqua, #54efd4); } .ds-btn-light:focus-visible { outline: 3px solid var(--sun, #ffcd62); outline-offset: 4px; } .ds-btn-light:active { transform: translateY(-1px); }"
+    },
+    {
+      "name": "Booking Field",
+      "kind": "input",
+      "refersTo": "input-booking",
+      "description": "A clean, highly legible field used inside the pale planning panel.",
+      "html": "<label class=\"ds-field\"><span>Check in</span><input type=\"date\" /></label>",
+      "css": ".ds-field { display: flex; flex-direction: column; gap: 7px; color: #50666c; font: 700 .7rem 'DM Sans', sans-serif; letter-spacing: .05em; text-transform: uppercase; } .ds-field input { width: 100%; min-height: 48px; padding: 0 13px; color: var(--ink, #071b27); background: #fff; border: 1px solid #cdddda; border-radius: 9px; font: 400 .9rem 'DM Sans', sans-serif; text-transform: none; } .ds-field input:hover { border-color: #9dbbb5; } .ds-field input:focus-visible { outline: 3px solid var(--sun, #ffcd62); outline-offset: 4px; }"
+    },
+    {
+      "name": "Contact Navigation Pill",
+      "kind": "nav",
+      "description": "The compact direct-contact action that closes the desktop navigation.",
+      "html": "<a class=\"ds-nav-contact\" href=\"tel:09228821234\"><svg viewBox=\"0 0 24 24\" width=\"17\" height=\"17\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.56 2.81.69A2 2 0 0 1 22 16.92z\"/></svg> Call the resort</a>",
+      "css": ".ds-nav-contact { min-height: 44px; display: inline-flex; align-items: center; gap: 8px; padding: 0 18px; color: #fff; background: transparent; border: 1px solid rgba(255,255,255,.3); border-radius: 999px; text-decoration: none; font: 600 .88rem 'DM Sans', sans-serif; transition: color 180ms ease, transform 180ms ease, border-color 180ms ease; } .ds-nav-contact:hover { color: var(--aqua, #54efd4); border-color: rgba(84,239,212,.65); transform: translateY(-1px); } .ds-nav-contact:focus-visible { outline: 3px solid var(--sun, #ffcd62); outline-offset: 4px; }"
+    },
+    {
+      "name": "Destination Card",
+      "kind": "card",
+      "refersTo": "card-destination",
+      "description": "The immersive image-led editorial card used to express place.",
+      "html": "<article class=\"ds-destination\"><div class=\"ds-destination-image\"></div><div class=\"ds-destination-shade\"></div><div class=\"ds-destination-copy\"><span>PRIVATE SHORE</span><h3>Blue-on-blue afternoons</h3><p>A quiet edge of Samal shaped by water and time.</p></div></article>",
+      "css": ".ds-destination { position: relative; width: 360px; min-height: 440px; overflow: hidden; border-radius: 14px; color: #fff; background: #0c2936; } .ds-destination-image { position: absolute; inset: 0; background: linear-gradient(145deg, #2e9cff 0%, #54efd4 48%, #071b27 100%); transition: transform 650ms cubic-bezier(.16,1,.3,1); } .ds-destination-shade { position: absolute; inset: 0; background: linear-gradient(180deg, transparent 30%, rgba(3,18,26,.9) 100%); } .ds-destination-copy { position: absolute; inset: auto 0 0; padding: 34px; } .ds-destination-copy > span { color: var(--aqua, #54efd4); font: 700 .74rem 'DM Sans', sans-serif; letter-spacing: .11em; } .ds-destination-copy h3 { margin: 10px 0; font: 600 2.4rem/1.02 'Cormorant Garamond', Georgia, serif; } .ds-destination-copy p { margin: 0; color: #d8eaec; font: 400 .95rem/1.55 'DM Sans', sans-serif; } .ds-destination:hover .ds-destination-image { transform: scale(1.045); } .ds-destination:focus-within { outline: 3px solid var(--sun, #ffcd62); outline-offset: 4px; }"
+    },
+    {
+      "name": "Featured Testimonial",
+      "kind": "card",
+      "refersTo": "card-testimonial",
+      "description": "A bright aqua proof surface that punctuates the dark page.",
+      "html": "<figure class=\"ds-testimonial\"><div class=\"ds-quote\">“</div><blockquote>It feels like the island saved a place for you.</blockquote><figcaption><span>AM</span><strong>Island traveler</strong></figcaption></figure>",
+      "css": ".ds-testimonial { width: 360px; min-height: 330px; margin: 0; padding: 34px; display: flex; flex-direction: column; justify-content: space-between; color: #062b27; background: var(--aqua, #54efd4); border-radius: 14px; font-family: 'DM Sans', sans-serif; } .ds-quote { font: 600 2.4rem 'Cormorant Garamond', Georgia, serif; opacity: .55; } .ds-testimonial blockquote { margin: 30px 0; font: 600 1.8rem/1.35 'Cormorant Garamond', Georgia, serif; } .ds-testimonial figcaption { display: flex; align-items: center; gap: 13px; font-size: .82rem; } .ds-testimonial figcaption span { width: 42px; height: 42px; display: grid; place-items: center; color: #fff; background: #16313a; border-radius: 50%; font-size: .72rem; font-weight: 700; }"
+    },
+    {
+      "name": "Floating Location Chip",
+      "kind": "chip",
+      "description": "A selective pale-glass fact label attached to travel imagery.",
+      "html": "<div class=\"ds-location\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0z\"/><circle cx=\"12\" cy=\"10\" r=\"3\"/></svg><span>Aundanao, Samal<br><strong>Davao del Norte</strong></span></div>",
+      "css": ".ds-location { display: inline-flex; gap: 10px; padding: 14px 18px; color: #09212c; background: rgba(244,255,252,.88); border-radius: 12px; box-shadow: 0 14px 40px rgba(0,0,0,.22); backdrop-filter: blur(12px); font: 400 .8rem/1.45 'DM Sans', sans-serif; } .ds-location svg { color: #ee624d; } .ds-location strong { font-size: .85rem; }"
+    },
+    {
+      "name": "Planner Call Surface",
+      "kind": "custom",
+      "description": "The high-intent direct-call surface nested inside the coral planning section.",
+      "html": "<a class=\"ds-planner-call\" href=\"tel:09228821234\"><span><strong>Call to plan your stay</strong><small>0922 882 1234</small></span><span aria-hidden=\"true\">↗</span></a>",
+      "css": ".ds-planner-call { min-height: 80px; display: flex; align-items: center; justify-content: space-between; padding: 18px 20px; color: #f4fffd; background: #092934; border-radius: 12px; text-decoration: none; font: 700 1rem 'DM Sans', sans-serif; transition: transform 200ms ease, background 200ms ease; } .ds-planner-call > span:first-child { display: flex; flex-direction: column; gap: 4px; } .ds-planner-call small { font-size: .72rem; font-weight: 500; opacity: .72; } .ds-planner-call:hover { transform: translateY(-3px); background: #0c3a48; } .ds-planner-call:focus-visible { outline: 3px solid var(--sun, #ffcd62); outline-offset: 4px; } .ds-planner-call:active { transform: translateY(-1px); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Aurora Editorial Escape",
+    "overview": "Gem by the Sea feels like a premium travel story unfolding after dusk: deep ocean ink creates intimacy, expansive coastal photography supplies the horizon, and concentrated aurora color makes the experience feel vivid rather than corporate. The system pairs direct, oversized sans-serif promises with selective Cormorant Garamond emphasis, giving emotional phrases a lyrical current without turning the entire interface decorative.\n\nThe layout is immersive and deliberately asymmetric. Photography overlaps, cards change scale, and key proof or planning controls float at the edge of larger fields. Liquid glass is reserved for useful overlays and the stay preview; most surfaces remain materially clear so translucency keeps its sense of occasion.",
+    "keyCharacteristics": [
+      "Deep sea ink as the continuous editorial canvas.",
+      "Aqua as the primary interactive and typographic spark; coral, violet, blue, and sun appear as concentrated aurora heat.",
+      "Oversized, tightly tracked sans-serif headlines with serif italics for emotional turns.",
+      "Edge-to-edge coastal photography shaped into arches, crops, and asymmetric editorial grids.",
+      "Selective blur, ambient glow, and soft lift around floating planning or location surfaces.",
+      "Generous vertical breathing room with compact, touch-friendly controls."
+    ],
+    "rules": [
+      { "name": "The Concentrated Aurora Rule", "body": "Bright hues arrive in focused accents, gradients, or one dominant feature surface; they never compete evenly across the whole page.", "section": "colors" },
+      { "name": "The Aqua Means Energy Rule", "body": "Aurora Aqua identifies action, emphasis, or a featured moment. Do not spend it on passive decoration when a neutral will do.", "section": "colors" },
+      { "name": "The Serif Current Rule", "body": "Cormorant Garamond is a current running through the layout, not the ocean: use it for a phrase or moment, never as the default interface voice.", "section": "typography" },
+      { "name": "The Short-Line Promise Rule", "body": "Large headings break into deliberate, balanced lines and retain tight leading; avoid long single-line marketing headlines.", "section": "typography" },
+      { "name": "The Overlap With Purpose Rule", "body": "Negative margins and floating elements are reserved for linking major narrative zones—the hero to planning, a location to its image, or a motif to a conversion field.", "section": "layout" },
+      { "name": "The Editorial Imbalance Rule", "body": "Prefer a strong primary column paired with a supporting column; equal grids are used only when content truly has equal weight.", "section": "layout" },
+      { "name": "The Selective Glass Rule", "body": "Use backdrop blur only for floating navigation, location, or planning surfaces; ordinary cards remain opaque.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do keep Deep Sea Ink as the dominant canvas and reserve pale surfaces for purposeful contrast.",
+      "Do use Aurora Aqua for primary action, highlighted language, and the most important proof surface.",
+      "Do pair oversized DM Sans headlines with brief Cormorant Garamond phrases.",
+      "Do let photography crop boldly and asymmetrically while maintaining readable overlays.",
+      "Do preserve 44px minimum targets, visible Island Sun focus, and reduced-motion behavior.",
+      "Do simplify mosaics and grids into a clear vertical reading order on mobile."
+    ],
+    "donts": [
+      "Don't spread every aurora hue across every component; the palette depends on concentration and hierarchy.",
+      "Don't turn glass blur into a universal card treatment.",
+      "Don't place copy directly on photography without a tested darkening gradient or an opaque surface.",
+      "Don't use the editorial serif for navigation, form controls, or long body copy.",
+      "Don't normalize the image composition into a uniform grid of identical cards.",
+      "Don't imply live availability or a completed reservation through visual states; the stay control is a preview that leads to direct contact."
+    ]
+  }
+}
