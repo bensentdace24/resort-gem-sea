@@ -3,7 +3,7 @@ export type Destination = {
   description: string;
   image: string;
   alt: string;
-  tone: 'aqua' | 'coral' | 'violet' | 'sunset';
+  tone: "aqua" | "coral" | "violet" | "sunset";
   detail: string;
 };
 
@@ -17,5 +17,5 @@ export type Testimonial = {
 export type Amenity = {
   title: string;
   description: string;
-  icon: 'waves' | 'pool' | 'users' | 'sparkles';
+  icon: "waves" | "pool" | "users" | "sparkles";
 };

@@ -16,8 +16,8 @@ export default function DestinationShowcase() {
               <span>{destination.detail}</span>
               <h3>{destination.title}</h3>
               <p>{destination.description}</p>
-              <span className="round-arrow" aria-hidden="true"><ArrowUpRight /></span>
             </div>
+            <span className="round-arrow" aria-hidden="true"><ArrowUpRight /></span>
           </article>
         ))}
       </div>

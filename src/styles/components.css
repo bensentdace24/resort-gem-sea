@@ -55,14 +55,24 @@
 .section-intro h2, .testimonial-head h2, .planner h2 { margin: 0; font-size: clamp(2.9rem, 5.2vw, 5.3rem); line-height: .98; letter-spacing: -.04em; }.section-intro h2 em, .testimonial-head h2 em, .planner h2 em { color: var(--aqua); }
 .section-intro p { max-width: 500px; margin: 0; color: var(--muted); line-height: 1.75; }
 .destination-grid { display: grid; grid-template-columns: 1.22fr .78fr; grid-template-rows: 560px 420px 450px; gap: 18px; }
-.destination-card { position: relative; overflow: hidden; min-height: 340px; border-radius: 14px; isolation: isolate; }
-.destination-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 650ms cubic-bezier(.16,1,.3,1); }.destination-card:hover img { transform: scale(1.045); }
-.destination-card::after { content: ''; position: absolute; inset: 0; z-index: 0; background: linear-gradient(180deg, transparent 30%, rgba(3,18,26,.9) 100%); }
-.destination-overlay { position: absolute; z-index: 1; inset: auto 0 0; padding: 34px; }.destination-overlay > span:first-child { color: var(--aqua); font-size: .74rem; font-weight: 700; text-transform: uppercase; letter-spacing: .11em; }
+.destination-card { --card-accent: var(--aqua); position: relative; overflow: hidden; min-height: 340px; border-radius: 14px; isolation: isolate; transform: translateZ(0); transition: transform 360ms cubic-bezier(.16,1,.3,1), box-shadow 360ms ease; }
+.destination-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 700ms cubic-bezier(.16,1,.3,1), filter 360ms ease; }
+.destination-card::after { content: ''; position: absolute; inset: 0; z-index: 0; background: linear-gradient(180deg, transparent 30%, rgba(3,18,26,.9) 100%); transition: opacity 360ms ease; }
+.destination-overlay { position: absolute; z-index: 1; inset: auto 0 0; padding: 34px 104px 34px 34px; transition: transform 360ms cubic-bezier(.16,1,.3,1); }.destination-overlay > span:first-child { color: var(--card-accent); font-size: .74rem; font-weight: 700; text-transform: uppercase; letter-spacing: .11em; }
 .destination-overlay h3 { max-width: 540px; margin: 10px 0; font-family: var(--serif); font-size: clamp(1.8rem, 3vw, 3.2rem); line-height: 1.02; }.destination-overlay p { max-width: 480px; margin: 0; color: #d8eaec; line-height: 1.55; }
-.round-arrow { position: absolute; right: 28px; bottom: 28px; width: 52px; height: 52px; display: grid; place-items: center; border: 1px solid rgba(255,255,255,.5); border-radius: 50%; }
+.round-arrow { position: absolute; z-index: 2; right: 28px; bottom: 28px; width: 52px; height: 52px; display: grid; place-items: center; color: #fff; background: rgba(7,27,39,.18); border: 1px solid rgba(255,255,255,.55); border-radius: 50%; backdrop-filter: blur(8px); transition: transform 300ms cubic-bezier(.16,1,.3,1), color 220ms ease, background 220ms ease, border-color 220ms ease, box-shadow 300ms ease; }
+.round-arrow svg { transition: transform 300ms cubic-bezier(.16,1,.3,1); }
 .destination-1 { grid-row: span 2; }.destination-4 { grid-column: span 2; }.destination-4 .destination-overlay { max-width: 70%; }
-.tone-coral .destination-overlay > span:first-child { color: #ff9a88; }.tone-violet .destination-overlay > span:first-child { color: #e3a7ff; }.tone-sunset .destination-overlay > span:first-child { color: var(--sun); }
+.tone-coral { --card-accent: #ff9a88; }.tone-violet { --card-accent: #e3a7ff; }.tone-sunset { --card-accent: var(--sun); }
+
+@media (hover: hover) and (pointer: fine) {
+  .destination-card:hover { transform: translateY(-6px); box-shadow: 0 24px 64px rgba(0,13,22,.42); }
+  .destination-card:hover img { transform: scale(1.055); filter: saturate(1.08) brightness(1.04); }
+  .destination-card:hover::after { opacity: .92; }
+  .destination-card:hover .destination-overlay { transform: translateY(-4px); }
+  .destination-card:hover .round-arrow { color: var(--ink); background: var(--card-accent); border-color: transparent; box-shadow: 0 12px 28px rgba(0,0,0,.24); transform: translateY(-4px) scale(1.05); }
+  .destination-card:hover .round-arrow svg { transform: translate(3px, -3px); }
+}
 
 .experience { position: relative; display: grid; grid-template-columns: 1.05fr .95fr; gap: 10vw; padding-block: 130px; }
 .experience::before { content: ''; position: absolute; width: 420px; height: 420px; left: -260px; top: 70px; background: radial-gradient(circle, rgba(219,92,255,.2), transparent 68%); pointer-events: none; }
@@ -99,7 +109,7 @@
   .hero { min-height: 900px; padding: 118px 14px 90px; display: block; }.hero h1 { font-size: clamp(3.6rem, 17vw, 5.4rem); }.hero-lede { font-size: 1rem; }.hero-actions { align-items: flex-start; flex-direction: column; gap: 12px; }.hero-visual { min-height: 420px; width: 100%; margin-top: 44px; }.hero-image-main { inset: 0 0 0 5%; border-radius: 42% 42% 14px 14px; }.hero-image-small { width: 34%; height: 42%; left: 0; border-width: 5px; }.location-chip { top: 28px; right: 5px; }.sun-orbit { width: 92px; height: 92px; right: 2px; bottom: 28px; }.sun-orbit::before { width: 48px; height: 48px; font-size: 1.5rem; }.sun-orbit span { display: none; }
   .booking-wrap { width: calc(100% - 28px); margin-top: -46px; padding: 22px 18px; }.booking-heading { align-items: flex-start; }.booking-form { grid-template-columns: 1fr; }.booking-form input, .booking-form select, .booking-submit { min-height: 52px; }
   .destinations { padding-block: 110px 80px; }.split-intro { grid-template-columns: 1fr; gap: 28px; }.section-intro { margin-bottom: 40px; }.section-intro h2, .testimonial-head h2, .planner h2 { font-size: clamp(2.8rem, 13vw, 4rem); }
-  .destination-grid { display: flex; flex-direction: column; }.destination-card { min-height: 470px; }.destination-4 .destination-overlay { max-width: none; }.destination-overlay { padding: 26px 22px; }.destination-overlay p { padding-right: 45px; }.round-arrow { right: 18px; bottom: 20px; width: 46px; height: 46px; }
+  .destination-grid { display: flex; flex-direction: column; }.destination-card { min-height: 470px; }.destination-4 .destination-overlay { max-width: none; }.destination-overlay { padding: 26px 82px 26px 22px; }.round-arrow { right: 18px; bottom: 20px; width: 46px; height: 46px; }
   .experience { grid-template-columns: 1fr; gap: 70px; padding-block: 90px; }.story-pull { margin-bottom: 60px; }.amenity-list { align-self: auto; }
   .testimonials { padding-block: 100px; }.testimonial-head { align-items: flex-start; flex-direction: column; gap: 32px; }.testimonial-grid { grid-template-columns: 1fr; }.testimonial-card, .testimonial-card.featured { grid-column: auto; min-height: 350px; padding: 28px; }
   .planner { width: calc(100% - 28px); grid-template-columns: 1fr; gap: 56px; padding: 64px 24px 30px; }.planner-orb { width: 56px; height: 56px; top: 18px; right: 22px; }.planner-call { min-height: 86px; }
